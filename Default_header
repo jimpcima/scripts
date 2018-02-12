@@ -1,0 +1,53 @@
+#!/bin/ksh
+#
+# ----------------------------------------------------------------------------
+# (C) Copyright CIMA.DK
+#
+#  Description:
+#
+#  Format     : Default_Header.sh
+#
+#  Change History:
+#  _______________
+#  Feature     Date        Who                          Description
+#  Init V0.1   01/10/2018  Jim Pedersen     CIMA.DK      Original
+#
+# ----------------------------------------------------------------------------
+# Explain usage
+# ----------------------------------------------------------------------------
+# 
+#
+#
+#
+#
+#Debug lines
+DEBUG=y 	# uncomment to echo variables and func names
+#TEST=y		#
+#set -xv	# uncomment to report
+# Setup of enviroment to run sripts
+[ "$DEBUG" ] && banner DEBUG ON
+[ "$TEST" ] && banner TEST ON
+
+#Functions section
+EnviromentSetup ()
+{
+
+NAMEVAR=
+[ "$DEBUG" ] && echo NAMEVAR $NAMEVAR
+
+}
+
+
+Funtion_My ()
+{
+[ "$DEBUG" ] && echo function "Funtion_My"
+for i in 1 2 3 4
+do
+  [ "$DEBUG" ] && echo variable i $i
+
+done
+}
+
+EnviromentSetup
+Funtion_My
+ 
